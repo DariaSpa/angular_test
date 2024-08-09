@@ -1,0 +1,13 @@
+<header>
+  <mat-toolbar class="mat-elevation-z4" color="primary">
+    <a routerLink="/" class="logo">{{ appTitle }}</a>
+    <button 
+      mat-button 
+      class="menu-item" 
+      *ngFor="let menuItem of menuItems" 
+      [routerLink]="menuItem.route" 
+      [routerLinkActive]="['active']">
+      {{ menuItem.label }}
+    </button>
+  </mat-toolbar>
+</header>

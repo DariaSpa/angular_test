@@ -1,0 +1,6 @@
+<app-image-grid
+  [isLoading]="isLoading"
+  [images]="photos"
+  [icon]="'favorite'"
+  (imageClick)="addToFavorites($event)"
+/>

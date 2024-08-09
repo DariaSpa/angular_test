@@ -1,0 +1,10 @@
+<div class="image-grid">
+  <app-image-card
+    *ngFor="let image of images"
+    [url]="image"
+    [icon]="'favorite'"
+    (imageClick)="imageClicked(image)">
+  </app-image-card>
+</div>
+<app-empty-list *ngIf="!images.length && !isLoading" />
+<app-loader *ngIf="isLoading"></app-loader>

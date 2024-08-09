@@ -1,0 +1,6 @@
+<mat-card class="image-card" [attr.data-testid]="'image-card-' + url" (click)="onClick()">
+  <img mat-card-image [src]="url" alt="Image" />
+  <div class="overlay">
+    <mat-icon>{{ icon }}</mat-icon>
+  </div>
+</mat-card>

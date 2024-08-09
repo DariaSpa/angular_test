@@ -1,0 +1,4 @@
+<div class="photo-detail">
+  <app-image-card [url]="photo" icon="delete" (imageClick)="removeFromFavorites()"></app-image-card>
+  <button mat-raised-button color="warn" (click)="removeFromFavorites()">Remove from Favorites</button>
+</div>

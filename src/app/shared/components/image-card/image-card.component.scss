@@ -1,0 +1,38 @@
+$icon-size: 48px;
+
+.image-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover .overlay {
+    opacity: 1;
+  }
+
+  mat-icon {
+    font-size: $icon-size;
+    width: $icon-size;
+    height: $icon-size;
+    color: white;
+  }
+}
